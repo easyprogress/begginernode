@@ -1,0 +1,19 @@
+<!-- // this we used to show the content in browser we used percentage tag  and this
+// we defind the loop so we see the item by listing -->
+<%-include('common/nav')-%>
+
+<html>
+    <head>
+        <title>neha</title>
+    </head>
+    <body>
+        <h4>hello miss beautiful <%=name%></h4>
+        <h4><%=data.email%></h4>
+        <h4><%=data.address%></h4>
+        <ul>
+            <%data.skills.forEach(function(item){%>
+                <li><%=item%></li>
+            <%})%>
+        </ul>
+    </body>
+</html>
